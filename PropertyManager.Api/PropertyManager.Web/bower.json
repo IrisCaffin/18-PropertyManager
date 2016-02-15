@@ -1,0 +1,19 @@
+{
+  "name": "PropertyManager.Web",
+  "homepage": "https://github.com/IrisCaffin/18-PropertyManager",
+  "authors": [
+    "Iris Caffin <iriscaffin@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

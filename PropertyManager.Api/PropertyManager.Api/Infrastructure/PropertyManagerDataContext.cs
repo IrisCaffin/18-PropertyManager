@@ -34,7 +34,8 @@ namespace PropertyManager.Api.Infrastructure
             modelBuilder.Entity<Address>()
                         .HasMany(a => a.Tenants)
                         .WithRequired(t => t.Address)
-                        .HasForeignKey(t => t.AddressId);
+                        .HasForeignKey(t => t.AddressId)
+                        .WillCascadeOnDelete(false);
 
             // Define Lease and its many relationships 
             // There are no many relationships here, so we move on

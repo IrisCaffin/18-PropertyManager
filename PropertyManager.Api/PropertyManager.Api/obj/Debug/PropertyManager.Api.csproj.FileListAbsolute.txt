@@ -43,3 +43,11 @@ C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\bin\Sys
 C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\obj\Debug\PropertyManager.Api.csprojResolveAssemblyReference.cache
 C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\obj\Debug\PropertyManager.Api.dll
 C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\obj\Debug\PropertyManager.Api.pdb
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\obj\Debug\PropertyManager.Api.Migrations.InitialCreate.resources
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\obj\Debug\PropertyManager.Api.csproj.GenerateResource.Cache
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\bin\AutoMapper.dll
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\bin\AutoMapper.xml
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\obj\Debug\PropertyManager.Api.Migrations.test.resources
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\bin\System.Web.Cors.dll
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\bin\System.Web.Http.Cors.dll
+C:\dev\github\18-PropertyManager\PropertyManager.Api\PropertyManager.Api\bin\System.Web.Http.Cors.xml

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PropertyManager.Api.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,11 +15,24 @@ namespace PropertyManager.Api.Domain
         public string Address4 { get; set; }
         public string Address5 { get; set; }
         public string City { get; set; }
-        public string Region { get; set; }
+        public string State { get; set; }
         public string PostCode { get; set; }
         public bool International { get; set; }
 
         public virtual ICollection<Property> Properties { get; set; }
         public virtual ICollection<Tenant> Tenants { get; set; }
+
+        public void Update(AddressModel modelAddress)
+        {
+            Address1 = modelAddress.Address1;
+            Address2 = modelAddress.Address2;
+            Address3 = modelAddress.Address3;
+            Address4 = modelAddress.Address4;
+            Address5 = modelAddress.Address5;
+            City = modelAddress.City;
+            State = modelAddress.State;
+            PostCode = modelAddress.PostCode;
+            International = modelAddress.International; 
+        }
     }
 }

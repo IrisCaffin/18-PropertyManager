@@ -13,7 +13,7 @@ namespace PropertyManager.Api.Models
         public int? TenantId { get; set; }
         public string Description { get; set; }
         public Priorities Priority { get; set; }
-        public DateTime OpenDate { get; set; }
+        public DateTime OpenedDate { get; set; }
         public DateTime ClosedDate { get; set; }
     }
 }

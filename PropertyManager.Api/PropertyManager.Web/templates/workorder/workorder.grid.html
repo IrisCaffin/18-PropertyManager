@@ -1,1 +1,33 @@
-﻿<h1>WORK ORDER - nutze den Tag!</h1>
+﻿<table class="table table-striped table-responsive">
+    <thead>
+        <tr>
+            <th>Work Order ID</th>
+            <th>Property ID</th>
+            <th>Tenant ID</th>
+            <th>Description</th>
+            <th>Priority</th>
+            <th>Opened Date</th>
+            <th>Closed Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="workOrder in workOrders">
+            <td>{{workOrder.WorkOrderId}}</td>
+            <td>{{workOrder.PropertyId}}</td>
+            <td>{{workOrder.TenantId}}</td>
+            <td>{{workOrder.Description}}</td>
+            <td>{{workOrder.Priority}}</td>
+            <td>{{workOrder.OpenedDate | date}}</td>
+            <td>{{workOrder.ClosedDate | date}}</td>
+            <td>
+                <a class="btn btn-info" ng-href="#/workOrder/detail/{{workOrder.WorkOrderId}}">
+                    Edit
+                </a>
+                <a class="btn btn-danger">
+                    Delete
+                </a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

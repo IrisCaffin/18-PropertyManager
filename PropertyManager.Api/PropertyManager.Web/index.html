@@ -13,6 +13,25 @@
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 
+    <!-- CSS | This is my background image! -->
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            height: 500px;
+            background-image: url(http://swiftlocksmiths.co.uk/wp-content/uploads/2015/06/islington.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        #pageContainer {
+            background-color: white;
+            opacity: 0.9;
+        }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,7 +65,7 @@
         </div>
     </nav>
 
-    <div class="container" style="margin-top: 60px;">    
+    <div id="pageContainer" class="container" style="margin-top: 60px;">    
         <div ui-view></div>
     </div>
   

@@ -33,7 +33,7 @@ namespace PropertyManager.Api.Domain
             PropertyId = workOrder.PropertyId;
             TenantId = workOrder.TenantId;
             Description = workOrder.Description;
-            OpenedDate = workOrder.OpenDate;
+            OpenedDate = workOrder.OpenedDate;
             ClosedDate = workOrder.ClosedDate;
         }
     }

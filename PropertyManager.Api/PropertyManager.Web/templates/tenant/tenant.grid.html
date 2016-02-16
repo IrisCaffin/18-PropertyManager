@@ -1,1 +1,31 @@
-﻿<h1>TENANT - profiter du présent!</h1>
+﻿<table class="table table-striped table-responsive">
+    <thead>
+        <tr>
+            <th>Tenant ID</th>
+            <th>Address ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Telephone</th>
+            <th>Email Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="tenant in tenants">
+            <td>{{tenant.TenantId}}</td>
+            <td>{{tenant.AddressId}}</td>
+            <td>{{tenant.FirstName}}</td>
+            <td>{{tenant.LastName}}</td>
+            <td>{{tenant.Telephone}}</td>
+            <td>{{tenant.EmailAddress}}</td>
+            <td>
+                <a class="btn btn-info" ng-href="#/tenant/detail/{{tenant.TenantId}}">
+                    Edit
+                </a>
+                <a class="btn btn-danger">
+                    Delete
+                </a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

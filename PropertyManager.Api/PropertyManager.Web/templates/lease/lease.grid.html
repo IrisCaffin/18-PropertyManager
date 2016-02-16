@@ -1,1 +1,33 @@
-﻿<h1>LEASE - pluk de dag!</h1>
+﻿<table class="table table-striped table-responsive">
+    <thead>
+        <tr>
+            <th>Lease ID</th>
+            <th>Tenant ID</th>
+            <th>Property ID</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Rent Amount</th>
+            <th>Rent Frequency</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="lease in leases">
+            <td>{{lease.LeaseId}}</td>
+            <td>{{lease.TenantId}}</td>
+            <td>{{lease.PropertyId}}</td>
+            <td>{{lease.StartDate | date}}</td>
+            <td>{{lease.EndDate | date}}</td>
+            <td>{{lease.RentAmount | currency:'$' }}</td>
+            <td>{{lease.RentFrequency}}</td>
+            <td>
+                <a class="btn btn-info" ng-href="#/lease/detail/{{lease.LeaseId}}">
+                    Edit
+                </a>
+                <a class="btn btn-danger">
+                    Delete
+                </a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

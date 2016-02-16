@@ -20,6 +20,6 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
                         .state('lease.detail', { url: '/detail/:id', templateUrl: '/templates/lease/lease.detail.html', controller: 'LeaseDetailController' })
 
                   .state('workorder', { url: '/workorder', abstract: true, template: '<ui-view/>' })
-                        .state('workorder.grid', { url: '/grid', templateUrl: '/templates/workorder/workorder.grid.html', controller: 'WorkorderGridController' })
-                        .state('workorder.detail', { url: '/detail/:id', templateUrl: '/templates/workorder/workorder.detail.html', controller: 'WorkorderDetailController' })
+                        .state('workorder.grid', { url: '/grid', templateUrl: '/templates/workorder/workorder.grid.html', controller: 'WorkOrderGridController' })
+                        .state('workorder.detail', { url: '/detail/:id', templateUrl: '/templates/workorder/workorder.detail.html', controller: 'WorkOrderDetailController' })
 });

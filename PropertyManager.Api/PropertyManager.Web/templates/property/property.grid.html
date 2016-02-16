@@ -1,28 +1,26 @@
 ﻿<table class="table table-striped table-responsive">
     <thead>
         <tr>
+            <th>Property ID</th>
+            <th>Address ID</th>
             <th>Property Name</th>
-            <th>Address 1</th>
-            <th>Address 2</th>
-            <th>Address 3</th>
-            <th>Address 4</th>
-            <th>Address 5</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Postcode</th>
+            <th>Square Feet</th>
+            <th>Number of Bedrooms</th>
+            <th>Number of Bathrooms</th>
+            <th>Number of Vehicles</th>
+            <th>Has Outdoor Space</th>
         </tr>
     </thead>
     <tbody>
         <tr ng-repeat="property in properties">
+            <td>{{property.PropertyId}}</td>
+            <td>{{property.AddressId}}</td>
             <td>{{property.PropertyName}}</td>
-            <td>{{property.Address.Address1}}</td>
-            <td>{{property.Address.Address2}}</td>
-            <td>{{property.Address.Address3}}</td>
-            <td>{{property.Address.Address4}}</td>
-            <td>{{property.Address.Address5}}</td>
-            <td>{{property.Address.City}}</td>
-            <td>{{property.Address.State}}</td>
-            <td>{{property.Address.Postcode}}</td>
+            <td>{{property.SquareFeet}}</td>
+            <td>{{property.NumberOfBedrooms}}</td>
+            <td>{{property.NumberOfBathrooms}}</td>
+            <td>{{property.NumberOfVehicles}}</td>
+            <td>{{property.HasOutdoorSpace}}</td>
             <td>
                 <a class="btn btn-info" ng-href="#/property/detail/{{property.PropertyId}}">
                     Edit

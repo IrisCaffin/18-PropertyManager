@@ -1,13 +1,18 @@
-﻿using PropertyManager.Api.Domain;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using PropertyManager.Api.Domain;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
+// This is my data base context!
+
 namespace PropertyManager.Api.Infrastructure
 {
-    public class PropertyManagerDataContext : DbContext
+    // Change DbContext to IdentityDbContext so that it can inherit from Identity
+
+    public class PropertyManagerDataContext : IdentityDbContext<PropertyManagerUser>
     {
         public PropertyManagerDataContext() : base("PropertyManager")
         {
@@ -62,9 +67,23 @@ namespace PropertyManager.Api.Infrastructure
                         .WithOptional(wo => wo.Tenant)
                         .HasForeignKey(wo => wo.TenantId);
 
+            modelBuilder.Entity<PropertyManagerUser>()
+                        .HasMany(u => u.Properties)
+                        .WithRequired(p => p.User)
+                        .HasForeignKey(p => p.UserId);
+
+            modelBuilder.Entity<PropertyManagerUser>()
+                        .HasMany(u => u.Tenants)
+                        .WithRequired(t => t.User)
+                        .HasForeignKey(t => t.UserId)
+                        .WillCascadeOnDelete(false);
+
+
             // Define WorkOrder and its many relationships
             // There are no many relationships here, only one-to relationships.
 
+            // This will set up all the relationships for ASP Net Identity
+            base.OnModelCreating(modelBuilder);
          
         }
     }

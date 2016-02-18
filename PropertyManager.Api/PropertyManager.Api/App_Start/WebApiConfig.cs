@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using PropertyManager.Api.Domain;
 using PropertyManager.Api.Models;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Cors;
@@ -9,6 +11,7 @@ namespace PropertyManager.Api
 {
     public static class WebApiConfig
     {
+        // Register method below is being called in Startup.cs
         public static void Register(HttpConfiguration config)
         {
             var cors = new EnableCorsAttribute("*", "*", "*");

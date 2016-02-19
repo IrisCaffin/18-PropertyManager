@@ -188,10 +188,11 @@
     <Compile Include="Domain\Address.cs" />
     <Compile Include="Domain\Lease.cs" />
     <Compile Include="Domain\Property.cs" />
-    <Compile Include="Domain\PropertyManagerUser.cs" />
+    <Compile Include="Models\PropertyManagerUser.cs" />
     <Compile Include="Domain\Tenant.cs" />
     <Compile Include="Domain\WorkOrder.cs" />
     <Compile Include="Infrastructure\AuthorizationRepository.cs" />
+    <Compile Include="Infrastructure\PropertyManagerAuthorizationServerProvider.cs" />
     <Compile Include="Infrastructure\PropertyManagerDataContext.cs" />
     <Compile Include="Migrations\201602180455228_InitialCreate.cs" />
     <Compile Include="Migrations\201602180455228_InitialCreate.Designer.cs">

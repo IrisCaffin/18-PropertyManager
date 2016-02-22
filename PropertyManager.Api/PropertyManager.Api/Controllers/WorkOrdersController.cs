@@ -96,6 +96,9 @@ namespace PropertyManager.Api.Controllers
 
             var dbWorkOrder = new WorkOrder();
 
+            // Lease doesn't need the following code in POST because it's not being created directly by the user
+            // dbWorkOrder.User = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+
             dbWorkOrder.Update(workOrder);
 
             db.WorkOrders.Add(dbWorkOrder);

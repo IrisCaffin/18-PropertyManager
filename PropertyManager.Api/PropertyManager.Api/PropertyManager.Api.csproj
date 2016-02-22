@@ -191,7 +191,7 @@
     <Compile Include="Models\PropertyManagerUser.cs" />
     <Compile Include="Domain\Tenant.cs" />
     <Compile Include="Domain\WorkOrder.cs" />
-    <Compile Include="Infrastructure\AuthorizationRepository.cs" />
+    <Compile Include="Domain\AuthorizationRepository.cs" />
     <Compile Include="Infrastructure\PropertyManagerAuthorizationServerProvider.cs" />
     <Compile Include="Infrastructure\PropertyManagerDataContext.cs" />
     <Compile Include="Migrations\201602180455228_InitialCreate.cs" />

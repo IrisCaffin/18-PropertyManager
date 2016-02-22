@@ -97,6 +97,9 @@ namespace PropertyManager.Api.Controllers
 
             var dbLease = new Lease();
 
+            // Lease doesn't need the following code in POST because it's not being created directly by the user
+            // dbLease.User = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+
             dbLease.Update(lease);
 
             db.Leases.Add(dbLease);
